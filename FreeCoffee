@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class FreeCoffee
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int x=sc.nextInt();
+int p=sc.nextInt();
+int count=0;
+if(x==0)
+System.out.println("0");
+else
+{
+ count=x;
+while(x>0)
+{
+float a=(float)(x*p)/100;
+x-=a;
+count+=x;
+}
+System.out.println(count);
+}
+}
+}
